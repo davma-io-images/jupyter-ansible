@@ -1,5 +1,10 @@
 ## Jupyter-Ansible image with TensorFlow and pyodbc == 4.0.30
 
+</br>
+
+[![Build and push images](https://github.com/davma-io-images/jupyter-ansible/actions/workflows/docker-image.yml/badge.svg)](https://github.com/davma-io-images/jupyter-ansible/actions/workflows/docker-image.yml)
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/davma/jupyter-ansible-tf?logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/davma/jupyter-tensorflow-pyodbc) 
 
 ## 1. Requirements
 
@@ -12,20 +17,20 @@ You can download the full image from [Docker Hub](https://hub.docker.com/) with 
 Jupyter-TensorFlow latest [official image](https://hub.docker.com/r/jupyter/tensorflow-notebook/tags?page=1&name=python) with Ansible and pyodbc == 4.0.30
 
 ````
-docker pull davma/jupyter-tensorflow-pyodbc:latest
+docker pull davma/jupyter-ansible-tf:latest
 ````
 
 Jupyter-TensorFlow python:3.10 [official image](https://hub.docker.com/r/jupyter/tensorflow-notebook/tags?page=1&name=python) with Ansible and pyodbc == 4.0.30
 ````
-docker pull davma/jupyter-tensorflow-pyodbc:3.10
+docker pull davma/jupyter-ansible-tf:3.10
 ````
 Jupyter-TensorFlow python:3.9 [official image](https://hub.docker.com/r/jupyter/tensorflow-notebook/tags?page=1&name=python) with Ansible and pyodbc == 4.0.30
 ````
-docker pull davma/jupyter-tensorflow-pyodbc:3.9
+docker pull davma/jupyter-ansible-tf:3.9
 ````
 Jupyter-TensorFlow python:3.8 [official image](https://hub.docker.com/r/jupyter/tensorflow-notebook/tags?page=1&name=python) with Ansible and pyodbc == 4.0.30
 ````
-docker pull davma/jupyter-tensorflow-pyodbc:3.8
+docker pull davma/jupyter-ansible-tf:3.8
 ````
 
 ## 3. Access to Jupyter
