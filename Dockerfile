@@ -1,4 +1,5 @@
 ARG IMAGE
+ARG NB_UID="1000"
 
 FROM ${IMAGE} as parent
 
@@ -8,5 +9,8 @@ RUN pip install ansible-kernel
 RUN python -m ansible_kernel.install
 RUN apt-get install -y sshpass
 
-WORKDIR /
-RUN chown jovyan -R home
+WORKDIR /home
+RUN chown jovyan -R jovyan
+
+USER ${NB_UID}
+WORKDIR /home/jovyan
