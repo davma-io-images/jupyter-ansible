@@ -9,4 +9,5 @@ RUN pip install ansible-kernel
 RUN python -m ansible_kernel.install
 RUN apt-get install -y sshpass
 
-USER ${NB_UID}
+RUN chgrp -R 0 /some/directory && \
+    chmod -R g=u /some/directory
