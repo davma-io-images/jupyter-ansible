@@ -1,4 +1,5 @@
 ARG IMAGE
+ARG NB_UID="100"
 
 FROM ${IMAGE} as parent
 

@@ -2,7 +2,7 @@ name: Build and push images
 on:
   push:
     branches:
-      - 'main'
+      - 'dockerfile-test'
     paths:
       - "*"
       - "!README.md"
@@ -44,6 +44,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/jupyter-ansible-tf:${{ matrix.tag }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/jupyter-ansible-tf-dockerfiletest:${{ matrix.tag }}
           build-args: |
             IMAGE=${{ matrix.base }}
