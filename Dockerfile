@@ -4,10 +4,18 @@ ARG NB_UID="100"
 FROM ${IMAGE} as parent
 
 USER root
+WORKDIR /
+
 # Install ANSIBLE
 RUN pip install ansible-kernel
 RUN python -m ansible_kernel.install
 RUN apt-get install -y sshpass
+
+# HashiCorp Vault API client
+RUN pip install hvac
+
+USER jovyan
+WORKDIR /home/jovyan
 
 # RUN chmod -R 777 /home/jovyan/
 # WORKDIR /home

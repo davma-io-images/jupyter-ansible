@@ -3,7 +3,6 @@
 </br>
 
 [![Build and push images](https://github.com/davma-io-images/jupyter-ansible/actions/workflows/docker-image.yml/badge.svg)](https://github.com/davma-io-images/jupyter-ansible/actions/workflows/docker-image.yml)
-
 [![Docker Pulls](https://img.shields.io/docker/pulls/davma/jupyter-ansible-tf?logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/davma/jupyter-tensorflow-pyodbc) 
 
 ## 1. Requirements
@@ -56,7 +55,7 @@ docker build -t jupyter-ansible .
 
 [Jupyter Notebook](https://jupyter.org/)
 
-[Ansible] (https://docs.ansible.com/)
+[Ansible](https://docs.ansible.com/)
 
 [TensorFlow](https://www.tensorflow.org/)
 
