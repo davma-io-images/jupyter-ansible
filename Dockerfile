@@ -1,5 +1,4 @@
 ARG IMAGE
-ARG NB_UID="100"
 
 FROM ${IMAGE} as parent
 
@@ -13,6 +12,8 @@ RUN apt-get install -y sshpass
 
 # HashiCorp Vault API client
 RUN pip install hvac
+
+RUN chmod -R 777 /home/jovyan/
 
 USER jovyan
 WORKDIR /home/jovyan
