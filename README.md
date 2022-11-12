@@ -1,5 +1,7 @@
 ## Jupyter-Ansible image with TensorFlow and pyodbc == 4.0.30
 
+This repository is deprecated. You can find the latest versions for Jupyter-Ansible image in the following link: https://github.com/davma-io-images/jupyterlab
+
 </br>
 
 [![Build and push images](https://github.com/davma-io-images/jupyter-ansible/actions/workflows/docker-image.yml/badge.svg)](https://github.com/davma-io-images/jupyter-ansible/actions/workflows/docker-image.yml)
